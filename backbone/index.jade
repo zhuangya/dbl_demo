@@ -1,0 +1,27 @@
+!!!5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Dribbble
+    link(href='./static/css/screen.css', rel='stylesheet')
+
+    script(src='./static/js/require.js', data-main='./static/js/main.js')
+  body
+    h1 DBL
+    #stage
+
+    script#dribbbleTemplate(type='text/template')
+      {{#square}}
+      <div class="shot">
+      <a class="link" href="{{{short_url}}}" title="">
+      <img src='{{{image_teaser_url}}}'/>
+      </a>
+      </div>
+      {{/square}}
+
+      <div class="pagination">
+      <a href="#gp" id="prev" class="nav" title="prev">prev</a>
+      <a href="#gn" id="next" class="nav" title="next">next</a>
+      </div>
+
+

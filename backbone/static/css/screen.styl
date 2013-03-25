@@ -1,0 +1,29 @@
+a
+  text-decoration none
+
+#stage
+  width 1000px
+  margin 10px auto
+  background-color #88a8ff
+  outline 1px solid pink
+  min-height 100px
+  &:after
+    content '\0020'
+    clear both
+    display block
+    visibility hidden
+    height 0
+  .shot
+    position relative
+    width 200px
+    height 150px
+    float left
+    img
+      display block
+      margin 0
+      padding 0
+      float left
+  .pagination
+    padding 16px
+    text-align center
+    background-color #f3f3f3

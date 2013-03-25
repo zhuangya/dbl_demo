@@ -1,0 +1,34 @@
+a {
+  text-decoration: none;
+}
+#stage {
+  width: 1000px;
+  margin: 10px auto;
+  background-color: #88a8ff;
+  outline: 1px solid #ffc0cb;
+  min-height: 100px;
+}
+#stage:after {
+  content: '\0020';
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+#stage .shot {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  float: left;
+}
+#stage .shot img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+#stage .pagination {
+  padding: 16px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
