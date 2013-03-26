@@ -1,0 +1,9 @@
+        <div ng-repeat="shot in square" class="shot">
+            <a href="{{shot.short_url}}" title="" class="link">
+                <img ng-src="{{shot.image_teaser_url}}">
+            </a>
+        </div>
+        <div class="pagination">
+            <a href="#gp" id="prev" class="nav" title="prev">prev</a>
+            <a href="#gn" id="next" class="nav" title="next">next</a>
+        </div>

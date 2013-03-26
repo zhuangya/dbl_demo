@@ -59,7 +59,6 @@ require(
             },
 
             square: function(page) {
-                console.log(page);
                 var self = this;
                 DBL.page = page = page || 1;
                 self.square.url = 'http://api.dribbble.com/shots/everyone?page=' + page + '&callback=?';
@@ -77,7 +76,6 @@ require(
                 });
             },
             pagePrev: function() {
-                console.log(DBL.page);
                 this.navigate('p' + (parseInt(DBL.page, 10) - 1), {
                     trigger: true
                 });
